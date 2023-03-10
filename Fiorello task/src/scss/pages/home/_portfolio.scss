@@ -1,0 +1,131 @@
+.home{
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    .contentt{
+        max-width: 50rem;
+        h3{
+            font-size: 6rem;
+            color: #333;
+        }
+        span{
+            font-size: 3.5rem;
+            color: rgb(255, 148, 166);
+            padding: 1rem 0;
+            line-height: 1.5;
+        }
+        p{
+            font-size: 1.5rem;
+            color: #999;
+            padding: 1rem 0;
+            line-height: 1.5;
+        }
+        .btnb{
+            display: inline-block;
+            margin-top: 1rem;
+            border-radius: 5rem;
+            background: #0a0a0a;
+            color: #fff;
+            padding: 1rem 1.5rem;
+            cursor: pointer;
+            font-size: 19px;
+            text-decoration: none;
+            &:hover{
+                background: pink;
+            }
+        }
+
+    }
+
+}
+#aboutt{
+    .heading{
+        text-align: center;
+        font-size: 4rem;
+        color: #333;
+        padding: 1rem;
+        margin: 2rem 0;
+        background: rgb(255,51,153,0.5);
+        span{
+            color: pink;
+
+        }
+      
+        }
+        .row{
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            padding: 2rem 0;     
+            padding-bottom: 3rem;   
+           .video-container{
+            flex: 1 1 40rem;
+            position: relative;
+            h3{
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 3rem;
+                width: 100%;
+                background: #fff;
+                padding: 1rem 2rem;
+                text-align: center;
+                mix-blend-mode: screen;
+            }
+            video{
+                width: 100%;
+                border: 1.5rem solid #fff;
+                border-radius: 5rem;
+                box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+                height: 100%;
+                object-fit: cover;
+            }
+           }
+           .cont{
+            flex: 1 1 40rem;
+             h3{
+                font-size: 3rem;
+                color: #333;
+             }
+             p{
+                font-size: 1.5rem;
+                color: #999;
+                padding: 1rem 0;
+                padding-top: 1rem;
+                line-height: 1.5;
+             }
+            
+           }
+    }
+}
+
+
+@media(max-width:991px){
+    #home{
+        padding: 0.3rem;
+        background-position: left;
+        .contentt{
+            h3{
+                font-size: 5rem;
+
+            }
+            span{
+                font-size: 2.5rem;
+            }
+        }
+    }
+}
+@media(max-width:450px){
+     html{
+        font-size: 50%;
+     }
+     .heading{
+        font-size: 3rem;
+     }
+}
